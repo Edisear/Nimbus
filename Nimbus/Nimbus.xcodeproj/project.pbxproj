@@ -1,0 +1,636 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F82464312B9D3EE6001ACD24 /* RecommendationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F82464302B9D3EE6001ACD24 /* RecommendationViewController.swift */; };
+		F83D29EE2B9EC756002E3B84 /* WeatherData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F83D29ED2B9EC756002E3B84 /* WeatherData.swift */; };
+		F8A761012B9D339F00A25099 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A761002B9D339F00A25099 /* AppDelegate.swift */; };
+		F8A761032B9D339F00A25099 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A761022B9D339F00A25099 /* SceneDelegate.swift */; };
+		F8A761082B9D33A000A25099 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = F8A761072B9D33A000A25099 /* Base */; };
+		F8A7610A2B9D33A100A25099 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8A761092B9D33A100A25099 /* Assets.xcassets */; };
+		F8A7610D2B9D33A100A25099 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = F8A7610C2B9D33A100A25099 /* Base */; };
+		F8A761182B9D33A100A25099 /* NimbusTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A761172B9D33A100A25099 /* NimbusTests.swift */; };
+		F8A761222B9D33A100A25099 /* NimbusUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A761212B9D33A100A25099 /* NimbusUITests.swift */; };
+		F8A761242B9D33A100A25099 /* NimbusUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A761232B9D33A100A25099 /* NimbusUITestsLaunchTests.swift */; };
+		F8A761312B9D36D900A25099 /* ForecastViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A761302B9D36D900A25099 /* ForecastViewController.swift */; };
+		F8A761332B9D36F900A25099 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A761322B9D36F900A25099 /* SearchViewController.swift */; };
+		F8A761352B9D372200A25099 /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A761342B9D372200A25099 /* FavoritesViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F8A761142B9D33A100A25099 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F8A760F52B9D339F00A25099 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F8A760FC2B9D339F00A25099;
+			remoteInfo = Nimbus;
+		};
+		F8A7611E2B9D33A100A25099 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F8A760F52B9D339F00A25099 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F8A760FC2B9D339F00A25099;
+			remoteInfo = Nimbus;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F82464302B9D3EE6001ACD24 /* RecommendationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendationViewController.swift; sourceTree = "<group>"; };
+		F83D29ED2B9EC756002E3B84 /* WeatherData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherData.swift; sourceTree = "<group>"; };
+		F8A760FD2B9D339F00A25099 /* Nimbus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Nimbus.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F8A761002B9D339F00A25099 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F8A761022B9D339F00A25099 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		F8A761072B9D33A000A25099 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F8A761092B9D33A100A25099 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F8A7610C2B9D33A100A25099 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F8A7610E2B9D33A100A25099 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F8A761132B9D33A100A25099 /* NimbusTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NimbusTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F8A761172B9D33A100A25099 /* NimbusTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NimbusTests.swift; sourceTree = "<group>"; };
+		F8A7611D2B9D33A100A25099 /* NimbusUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NimbusUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F8A761212B9D33A100A25099 /* NimbusUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NimbusUITests.swift; sourceTree = "<group>"; };
+		F8A761232B9D33A100A25099 /* NimbusUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NimbusUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		F8A761302B9D36D900A25099 /* ForecastViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastViewController.swift; sourceTree = "<group>"; };
+		F8A761322B9D36F900A25099 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		F8A761342B9D372200A25099 /* FavoritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
+		F8C723502BA635530078EB56 /* Nimbus.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Nimbus.entitlements; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F8A760FA2B9D339F00A25099 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F8A761102B9D33A100A25099 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F8A7611A2B9D33A100A25099 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F8A760F42B9D339F00A25099 = {
+			isa = PBXGroup;
+			children = (
+				F8A760FF2B9D339F00A25099 /* Nimbus */,
+				F8A761162B9D33A100A25099 /* NimbusTests */,
+				F8A761202B9D33A100A25099 /* NimbusUITests */,
+				F8A760FE2B9D339F00A25099 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F8A760FE2B9D339F00A25099 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F8A760FD2B9D339F00A25099 /* Nimbus.app */,
+				F8A761132B9D33A100A25099 /* NimbusTests.xctest */,
+				F8A7611D2B9D33A100A25099 /* NimbusUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F8A760FF2B9D339F00A25099 /* Nimbus */ = {
+			isa = PBXGroup;
+			children = (
+				F8C723502BA635530078EB56 /* Nimbus.entitlements */,
+				F8A761002B9D339F00A25099 /* AppDelegate.swift */,
+				F8A761022B9D339F00A25099 /* SceneDelegate.swift */,
+				F83D29ED2B9EC756002E3B84 /* WeatherData.swift */,
+				F8A761302B9D36D900A25099 /* ForecastViewController.swift */,
+				F8A761322B9D36F900A25099 /* SearchViewController.swift */,
+				F82464302B9D3EE6001ACD24 /* RecommendationViewController.swift */,
+				F8A761342B9D372200A25099 /* FavoritesViewController.swift */,
+				F8A761062B9D33A000A25099 /* Main.storyboard */,
+				F8A761092B9D33A100A25099 /* Assets.xcassets */,
+				F8A7610B2B9D33A100A25099 /* LaunchScreen.storyboard */,
+				F8A7610E2B9D33A100A25099 /* Info.plist */,
+			);
+			path = Nimbus;
+			sourceTree = "<group>";
+		};
+		F8A761162B9D33A100A25099 /* NimbusTests */ = {
+			isa = PBXGroup;
+			children = (
+				F8A761172B9D33A100A25099 /* NimbusTests.swift */,
+			);
+			path = NimbusTests;
+			sourceTree = "<group>";
+		};
+		F8A761202B9D33A100A25099 /* NimbusUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F8A761212B9D33A100A25099 /* NimbusUITests.swift */,
+				F8A761232B9D33A100A25099 /* NimbusUITestsLaunchTests.swift */,
+			);
+			path = NimbusUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F8A760FC2B9D339F00A25099 /* Nimbus */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F8A761272B9D33A100A25099 /* Build configuration list for PBXNativeTarget "Nimbus" */;
+			buildPhases = (
+				F8A760F92B9D339F00A25099 /* Sources */,
+				F8A760FA2B9D339F00A25099 /* Frameworks */,
+				F8A760FB2B9D339F00A25099 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Nimbus;
+			productName = Nimbus;
+			productReference = F8A760FD2B9D339F00A25099 /* Nimbus.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F8A761122B9D33A100A25099 /* NimbusTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F8A7612A2B9D33A100A25099 /* Build configuration list for PBXNativeTarget "NimbusTests" */;
+			buildPhases = (
+				F8A7610F2B9D33A100A25099 /* Sources */,
+				F8A761102B9D33A100A25099 /* Frameworks */,
+				F8A761112B9D33A100A25099 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F8A761152B9D33A100A25099 /* PBXTargetDependency */,
+			);
+			name = NimbusTests;
+			productName = NimbusTests;
+			productReference = F8A761132B9D33A100A25099 /* NimbusTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F8A7611C2B9D33A100A25099 /* NimbusUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F8A7612D2B9D33A100A25099 /* Build configuration list for PBXNativeTarget "NimbusUITests" */;
+			buildPhases = (
+				F8A761192B9D33A100A25099 /* Sources */,
+				F8A7611A2B9D33A100A25099 /* Frameworks */,
+				F8A7611B2B9D33A100A25099 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F8A7611F2B9D33A100A25099 /* PBXTargetDependency */,
+			);
+			name = NimbusUITests;
+			productName = NimbusUITests;
+			productReference = F8A7611D2B9D33A100A25099 /* NimbusUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F8A760F52B9D339F00A25099 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1530;
+				LastUpgradeCheck = 1530;
+				TargetAttributes = {
+					F8A760FC2B9D339F00A25099 = {
+						CreatedOnToolsVersion = 15.3;
+					};
+					F8A761122B9D33A100A25099 = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = F8A760FC2B9D339F00A25099;
+					};
+					F8A7611C2B9D33A100A25099 = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = F8A760FC2B9D339F00A25099;
+					};
+				};
+			};
+			buildConfigurationList = F8A760F82B9D339F00A25099 /* Build configuration list for PBXProject "Nimbus" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F8A760F42B9D339F00A25099;
+			productRefGroup = F8A760FE2B9D339F00A25099 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F8A760FC2B9D339F00A25099 /* Nimbus */,
+				F8A761122B9D33A100A25099 /* NimbusTests */,
+				F8A7611C2B9D33A100A25099 /* NimbusUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F8A760FB2B9D339F00A25099 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8A7610A2B9D33A100A25099 /* Assets.xcassets in Resources */,
+				F8A7610D2B9D33A100A25099 /* Base in Resources */,
+				F8A761082B9D33A000A25099 /* Base in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F8A761112B9D33A100A25099 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F8A7611B2B9D33A100A25099 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F8A760F92B9D339F00A25099 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8A761332B9D36F900A25099 /* SearchViewController.swift in Sources */,
+				F82464312B9D3EE6001ACD24 /* RecommendationViewController.swift in Sources */,
+				F83D29EE2B9EC756002E3B84 /* WeatherData.swift in Sources */,
+				F8A761312B9D36D900A25099 /* ForecastViewController.swift in Sources */,
+				F8A761012B9D339F00A25099 /* AppDelegate.swift in Sources */,
+				F8A761352B9D372200A25099 /* FavoritesViewController.swift in Sources */,
+				F8A761032B9D339F00A25099 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F8A7610F2B9D33A100A25099 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8A761182B9D33A100A25099 /* NimbusTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F8A761192B9D33A100A25099 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8A761242B9D33A100A25099 /* NimbusUITestsLaunchTests.swift in Sources */,
+				F8A761222B9D33A100A25099 /* NimbusUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F8A761152B9D33A100A25099 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F8A760FC2B9D339F00A25099 /* Nimbus */;
+			targetProxy = F8A761142B9D33A100A25099 /* PBXContainerItemProxy */;
+		};
+		F8A7611F2B9D33A100A25099 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F8A760FC2B9D339F00A25099 /* Nimbus */;
+			targetProxy = F8A7611E2B9D33A100A25099 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F8A761062B9D33A000A25099 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F8A761072B9D33A000A25099 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F8A7610B2B9D33A100A25099 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F8A7610C2B9D33A100A25099 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F8A761252B9D33A100A25099 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F8A761262B9D33A100A25099 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F8A761282B9D33A100A25099 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
+				CODE_SIGN_ENTITLEMENTS = Nimbus/Nimbus.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = X6Q7G6QMQF;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Nimbus/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Nimbus;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.weather";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Please allow access if you want weather data";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jraeside.Nimbus;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F8A761292B9D33A100A25099 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
+				CODE_SIGN_ENTITLEMENTS = Nimbus/Nimbus.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = X6Q7G6QMQF;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Nimbus/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Nimbus;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.weather";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Please allow access if you want weather data";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jraeside.Nimbus;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F8A7612B2B9D33A100A25099 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jraeside.NimbusTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Nimbus.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Nimbus";
+			};
+			name = Debug;
+		};
+		F8A7612C2B9D33A100A25099 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jraeside.NimbusTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Nimbus.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Nimbus";
+			};
+			name = Release;
+		};
+		F8A7612E2B9D33A100A25099 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jraeside.NimbusUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Nimbus;
+			};
+			name = Debug;
+		};
+		F8A7612F2B9D33A100A25099 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jraeside.NimbusUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Nimbus;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F8A760F82B9D339F00A25099 /* Build configuration list for PBXProject "Nimbus" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F8A761252B9D33A100A25099 /* Debug */,
+				F8A761262B9D33A100A25099 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F8A761272B9D33A100A25099 /* Build configuration list for PBXNativeTarget "Nimbus" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F8A761282B9D33A100A25099 /* Debug */,
+				F8A761292B9D33A100A25099 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F8A7612A2B9D33A100A25099 /* Build configuration list for PBXNativeTarget "NimbusTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F8A7612B2B9D33A100A25099 /* Debug */,
+				F8A7612C2B9D33A100A25099 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F8A7612D2B9D33A100A25099 /* Build configuration list for PBXNativeTarget "NimbusUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F8A7612E2B9D33A100A25099 /* Debug */,
+				F8A7612F2B9D33A100A25099 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F8A760F52B9D339F00A25099 /* Project object */;
+}
